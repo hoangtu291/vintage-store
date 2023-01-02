@@ -1,0 +1,27 @@
+{#include base.html}
+{#title}CDs{/title}
+{#body}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">MusicCompany</th>
+        <th scope="col">Genre</th>
+        <th scope="col">Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    {#for cd in cds}
+    <tr>
+        <td scope="row">{cd.id}</td>
+        <td>{cd.title}</td>
+        <td>{cd.musicCompany}</td>
+        <td>{cd.genre}</td>
+        <td>{cd.price}</td>
+    </tr>
+    {/for}
+    </tbody>
+</table>
+{/body}
+{/include}

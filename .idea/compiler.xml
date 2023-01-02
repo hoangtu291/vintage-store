@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="artist" />
+        <module name="vintage-store" />
+        <module name="customer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="artist" target="17" />
+      <module name="customer" target="17" />
+      <module name="parent" target="1.5" />
+      <module name="quarkus-course" target="1.5" />
+      <module name="vintage-store" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="artist" options="-parameters" />
+      <module name="customer" options="-parameters" />
+      <module name="quarkus-course" options="" />
+      <module name="vintage-store" options="-parameters" />
+    </option>
+  </component>
+</project>
